@@ -16,3 +16,19 @@ let v2 = Vector2D(x: 3.0, y: 4.0)
 let vs = v1 + v2
 
 print("vs.x: \(vs.x), vs.y: \(vs.y)")
+
+//<-------------------------------------->
+
+struct Car {
+    var price: Double
+
+    static prefix func ++ (car: inout Car) {
+        car.price += 100
+    }
+}
+
+var car = Car(price: 1000)
+print("Car Price: \(car.price)")
+++car
+++car
+print("Car Price: \(car.price)")
