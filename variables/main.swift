@@ -29,6 +29,16 @@ print("Variable n1: \(n1)")
 print("Variable n2: \(n2)")
 
 //<-------------------------------------->
+//swift optional
 
-print("Variable n11: \(n11)")
+let someValue1 = Int()
+var someValue2:Int? //value is nil
+var someValue3:Int? = 10
+
+
+print("Value of someValue : \(someValue1)")
+print("Value of someValue : \(someValue2)")
+print("Value of someValue : \(someValue3)")
+print("Value of someValue : \(someValue3!)")
+
 
